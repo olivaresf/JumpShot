@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11832D1D262E1C5B0081C763 /* JumpShot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D817FC3E261BCFB00092F5E0 /* JumpShot.framework */; };
+		11832D1E262E1C5B0081C763 /* JumpShot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D817FC3E261BCFB00092F5E0 /* JumpShot.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D817FC48261BCFB00092F5E0 /* JumpShot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D817FC3E261BCFB00092F5E0 /* JumpShot.framework */; };
 		D817FC4D261BCFB00092F5E0 /* JumpShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817FC4C261BCFB00092F5E0 /* JumpShotTests.swift */; };
 		D817FC4F261BCFB00092F5E0 /* JumpShot.h in Headers */ = {isa = PBXBuildFile; fileRef = D817FC41261BCFB00092F5E0 /* JumpShot.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,6 +64,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		11832D18262E1C4C0081C763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D817FC35261BCFB00092F5E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D817FC3D261BCFB00092F5E0;
+			remoteInfo = JumpShot;
+		};
 		D817FC49261BCFB00092F5E0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D817FC35261BCFB00092F5E0 /* Project object */;
@@ -70,6 +79,20 @@
 			remoteInfo = JumpShot;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11832D1F262E1C5B0081C763 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11832D1E262E1C5B0081C763 /* JumpShot.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D817FC3E261BCFB00092F5E0 /* JumpShot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JumpShot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,12 +175,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11832D1D262E1C5B0081C763 /* JumpShot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11832D15262E1C4C0081C763 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D817FC34261BCFB00092F5E0 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +196,7 @@
 				D817FC4B261BCFB00092F5E0 /* JumpShotTests */,
 				D817FCC5261BD1A00092F5E0 /* JumpShotExamples */,
 				D817FC3F261BCFB00092F5E0 /* Products */,
+				11832D15262E1C4C0081C763 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -488,10 +520,12 @@
 				D817FCC0261BD1A00092F5E0 /* Sources */,
 				D817FCC1261BD1A00092F5E0 /* Frameworks */,
 				D817FCC2261BD1A00092F5E0 /* Resources */,
+				11832D1F262E1C5B0081C763 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				11832D19262E1C4C0081C763 /* PBXTargetDependency */,
 			);
 			name = JumpShotExamples;
 			productName = JumpShotExamples;
@@ -658,6 +692,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		11832D19262E1C4C0081C763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D817FC3D261BCFB00092F5E0 /* JumpShot */;
+			targetProxy = 11832D18262E1C4C0081C763 /* PBXContainerItemProxy */;
+		};
 		D817FC4A261BCFB00092F5E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D817FC3D261BCFB00092F5E0 /* JumpShot */;
